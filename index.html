@@ -10,8 +10,8 @@
         <canvas id="chart"></canvas>
         <script>
             
-            d3.csv('https://docs.google.com/spreadsheets/d/1BE_Dnbe0vTYKhIM-idQKySXuYWIhYucBeKJVzWofQJI/edit?usp=sharing')
-            .then(makeChart);
+            var file = 'titanic3.csv';
+            d3.csv(file).then(makeChart);
             function makeChart(survivor) {
                 var survivors = days.map(function(d) {return d.survived});
 
